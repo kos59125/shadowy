@@ -7,6 +7,5 @@ Author: Kosei Abe
 Maintainer: Kosei Abe <mail@recyclebin.jp>
 Description: This package helps you to build your own RESTful API application with R.
 License: BSD_3_clause + file LICENSE
-Imports: Rook
 Suggests: testthat, magrittr
 Encoding: UTF-8
