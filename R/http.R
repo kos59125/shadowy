@@ -1,7 +1,18 @@
 #' HTTP Context
+#'
+#' @param env
+#'    an environment object that has request information.
+#' @param status
+#'    default HTTP status code.
+#' @param headers
+#'    default HTTP response header list.
+#' @param body
+#'    default response body.
+#' @param x
+#'    a value.
 #' @rdname http.context
 #' @export
-createContext <- function(env, status = 200L, headers = list(), body = NULL) {
+createContext <- function(env, status = 200L, headers = list(), body = "") {
    structure(
       ## default status is NOT_FOUND.
       list(request = env, response = list(status = status, headers = headers, body = body)),
@@ -16,6 +27,11 @@ is.http.context <- function(x) {
 }
 
 #' HTTP Source
+#'
+#' @param f
+#'    a function.
+#' @param x
+#'    a value.
 #' @rdname http.source
 #' @export
 as.http.source <- function(f) {
@@ -29,6 +45,11 @@ is.http.source <- function(x) {
 }
 
 #' Bind Source
+#'
+#' @param first
+#'    the first function to call.
+#' @param second
+#'    the second function to call.
 #' @rdname bind
 #' @export
 `%>>%` <- function(first, second) {
@@ -51,6 +72,9 @@ is.http.source <- function(x) {
 }
 
 #' Select Source
+#'
+#' @param ...
+#'    list of http.source.
 #' @rdname route
 #' @export
 route <- function(...) {

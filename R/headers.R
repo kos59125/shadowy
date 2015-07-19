@@ -1,4 +1,8 @@
 #' Content Type
+#' @param mimeType
+#'    the MIME-Type specified in the response header.
+#' @param charset
+#'    the character set specified in the response header.
 #' @export
 CONTENT_TYPE <- function(mimeType, charset) {
    contentType <- if (missing(charset)) {

@@ -1,6 +1,8 @@
 #' Response Body
-#' @param \code{value}
+#' @param value
 #'    a value.
+#' @param expr
+#'    a quote object. The value is evaluated at each request.
 #' @rdname body
 #' @export
 setBody <- function(value) {
@@ -11,8 +13,6 @@ setBody <- function(value) {
    })
 }
 
-#' @param \code{expr}
-#'    a quote object. The value is evaluated at each request.
 #' @rdname body
 #' @export
 setBodyLazy <- function(expr) {

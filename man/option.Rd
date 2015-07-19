@@ -25,6 +25,9 @@ is.none(x)
 
 as.option(x)
 }
+\arguments{
+\item{x}{a value.}
+}
 \description{
 Encapsulates the given value as an option value.
 \code{some} indicates the object has a value, and \code{none} does it has no value.

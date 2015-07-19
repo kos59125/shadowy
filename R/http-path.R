@@ -1,4 +1,10 @@
-#' Set URL path
+#' Set URL Path
+#' @param path
+#'    a URL path.
+#' @param f
+#'    a function that takes parsed parameters.
+#' @param ...
+#'    extra parameters.
 #' @rdname path
 #' @export
 path <- function(path) {
@@ -12,7 +18,6 @@ path <- function(path) {
    })
 }
 
-#' Set URL path
 #' @rdname path
 #' @export
 path.scan <- function(path, f, ...) {

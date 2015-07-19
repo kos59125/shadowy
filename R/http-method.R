@@ -1,5 +1,5 @@
 #' Check HTTP Method
-#' @param \code{m}
+#' @param m
 #'    accepting methods.
 #' @return
 #'    the given HTTP context itself when the current request HTTP method is one of the given methods;

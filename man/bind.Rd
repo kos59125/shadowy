@@ -9,6 +9,11 @@ first \%>>\% second
 
 first \%|>>\% second
 }
+\arguments{
+\item{first}{the first function to call.}
+
+\item{second}{the second function to call.}
+}
 \description{
 Bind Source
 }

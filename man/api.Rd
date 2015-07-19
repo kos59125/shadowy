@@ -6,6 +6,9 @@
 \usage{
 api(action)
 }
+\arguments{
+\item{action}{an http.source object.}
+}
 \description{
 Creates a Rook application.
 }

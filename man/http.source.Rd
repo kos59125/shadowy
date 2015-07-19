@@ -9,6 +9,11 @@ as.http.source(f)
 
 is.http.source(x)
 }
+\arguments{
+\item{f}{a function.}
+
+\item{x}{a value.}
+}
 \description{
 HTTP Source
 }

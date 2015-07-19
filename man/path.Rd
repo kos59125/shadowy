@@ -3,15 +3,20 @@
 \name{path}
 \alias{path}
 \alias{path.scan}
-\title{Set URL path}
+\title{Set URL Path}
 \usage{
 path(path)
 
 path.scan(path, f, ...)
 }
-\description{
-Set URL path
+\arguments{
+\item{path}{a URL path.}
 
-Set URL path
+\item{f}{a function that takes parsed parameters.}
+
+\item{...}{extra parameters.}
+}
+\description{
+Set URL Path
 }
 

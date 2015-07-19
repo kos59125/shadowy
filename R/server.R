@@ -1,4 +1,6 @@
 #' Creates a Rook application.
+#' @param action
+#'    an http.source object.
 #' @export
 api <- function(action) {
    function(env) {

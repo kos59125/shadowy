@@ -13,9 +13,9 @@ setBodyLazy(expr)
 emptyBody()
 }
 \arguments{
-\item{\code{value}}{a value.}
+\item{value}{a value.}
 
-\item{\code{expr}}{a quote object. The value is evaluated at each request.}
+\item{expr}{a quote object. The value is evaluated at each request.}
 }
 \description{
 Response Body

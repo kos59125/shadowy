@@ -7,7 +7,7 @@
 get.option(x)
 }
 \arguments{
-\item{\code{x}}{an option value.}
+\item{x}{an option value.}
 }
 \value{
 The internal value.

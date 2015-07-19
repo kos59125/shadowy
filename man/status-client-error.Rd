@@ -22,8 +22,6 @@
 \alias{UNSUPPORTED_MEDIA_TIME}
 \title{Client Error}
 \format{\preformatted{function (context)  
- - attr(*, "srcref")=Class 'srcref'  atomic [1:8] 13 19 17 4 19 4 13 17
-  .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x7fce4ea80a60> 
  - attr(*, "class")= chr "http.source"
 }}
 \usage{

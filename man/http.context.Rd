@@ -5,9 +5,20 @@
 \alias{is.http.context}
 \title{HTTP Context}
 \usage{
-createContext(env, status = 200L, headers = list(), body = NULL)
+createContext(env, status = 200L, headers = list(), body = "")
 
 is.http.context(x)
+}
+\arguments{
+\item{env}{an environment object that has request information.}
+
+\item{status}{default HTTP status code.}
+
+\item{headers}{default HTTP response header list.}
+
+\item{body}{default response body.}
+
+\item{x}{a value.}
 }
 \description{
 HTTP Context

@@ -7,7 +7,7 @@
 setHttpStatus(status)
 }
 \arguments{
-\item{\code{status}}{an HTTP status code.}
+\item{status}{an HTTP status code.}
 }
 \description{
 HTTP Status

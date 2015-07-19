@@ -1,6 +1,6 @@
 #' HTTP Status
 #'
-#' @param \code{status}
+#' @param status
 #'    an HTTP status code.
 #' @rdname status
 #' @export

@@ -7,7 +7,9 @@
 bind.option(x, f)
 }
 \arguments{
-\item{\code{x}}{an option value.}
+\item{x}{an option value.}
+
+\item{f}{a binding function.}
 }
 \value{
 The internal value.

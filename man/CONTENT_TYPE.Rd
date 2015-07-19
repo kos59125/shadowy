@@ -6,6 +6,11 @@
 \usage{
 CONTENT_TYPE(mimeType, charset)
 }
+\arguments{
+\item{mimeType}{the MIME-Type specified in the response header.}
+
+\item{charset}{the character set specified in the response header.}
+}
 \description{
 Content Type
 }

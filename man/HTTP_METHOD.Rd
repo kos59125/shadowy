@@ -31,7 +31,7 @@ TRACE(context)
 CONNECT(context)
 }
 \arguments{
-\item{\code{m}}{accepting methods.}
+\item{m}{accepting methods.}
 }
 \value{
 the given HTTP context itself when the current request HTTP method is one of the given methods;

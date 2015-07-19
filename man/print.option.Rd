@@ -5,10 +5,12 @@
 \alias{print.option}
 \title{Print}
 \usage{
-\method{print}{option}(x)
+\method{print}{option}(x, ...)
 }
 \arguments{
-\item{\code{option}}{an option value.}
+\item{x}{an option value.}
+
+\item{...}{extra parameters (unused).}
 }
 \description{
 Implementation of \code{print} function for option class.

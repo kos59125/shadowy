@@ -3,6 +3,8 @@
 #' Encapsulates the given value as an option value.
 #' \code{some} indicates the object has a value, and \code{none} does it has no value.
 #'
+#' @param x
+#'    a value.
 #' @rdname option
 #' @export
 some <- function(x) {
@@ -40,7 +42,7 @@ as.option <- function(x) {
 #' Get Value
 #'
 #' Gets the internal value of the specified option value.
-#' @param \code{x}
+#' @param x
 #'    an option value.
 #' @return
 #'    The internal value.
@@ -53,8 +55,10 @@ get.option <- function(x) {
 #' Bind Function
 #'
 #' Applies the specified function to the first option value if the value is some.
-#' @param \code{x}
+#' @param x
 #'    an option value.
+#' @param f
+#'    a binding function.
 #' @return
 #'    The internal value.
 #' @export
@@ -69,11 +73,13 @@ bind.option <- function(x, f) {
 #' Print
 #'
 #' Implementation of \code{print} function for option class.
-#' @param \code{option}
+#' @param x
 #'    an option value.
+#' @param ...
+#'    extra parameters (unused).
 #' @aliases print
 #' @export
-print.option <- function(x) {
+print.option <- function(x, ...) {
    if (is.some(x)) {
       cat("some", fill=TRUE)
       print(x[[1L]])
