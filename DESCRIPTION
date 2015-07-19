@@ -5,7 +5,20 @@ Version: 0.1
 Date: 2015-07-16
 Author: Kosei Abe
 Maintainer: Kosei Abe <mail@recyclebin.jp>
-Description: This package helps you to build your own RESTful API application with R.
+Description: This package helps you to build your own RESTful API application
+    with R.
 License: BSD_3_clause + file LICENSE
-Suggests: testthat, magrittr
+Suggests:
+    testthat,
+    magrittr
 Encoding: UTF-8
+Collate:
+    'body.R'
+    'headers.R'
+    'http.R'
+    'http-method.R'
+    'http-path.R'
+    'option.R'
+    'server.R'
+    'shadowy.R'
+    'status.R'

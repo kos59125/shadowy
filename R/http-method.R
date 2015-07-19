@@ -1,23 +1,23 @@
+#' @include http.R
+NULL
+
 #' Check HTTP Method
-#' @param m
+#' @param method
 #'    accepting methods.
 #' @return
 #'    the given HTTP context itself when the current request HTTP method is one of the given methods;
 #'    otherwise \code{none}.
 #' @rdname HTTP_METHOD
 #' @export
-HTTP_METHOD <- function(m) {
-   ## Cannot compile with roxygen2
-   # as.http.source(
-   function(context) {
+HTTP_METHOD <- function(method) {
+   as.http.source(function(context) {
       stopifnot(is.http.context(context))
-      if (context$request$REQUEST_METHOD %in% m) {
+      if (context$request$REQUEST_METHOD %in% method) {
          some(context)
       } else {
          none
       }
-   }
-   # )
+   })
 }
 
 ############################################################
@@ -25,6 +25,7 @@ HTTP_METHOD <- function(m) {
 ## http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
 ############################################################
 
+#' @include http.R
 #' @rdname HTTP_METHOD
 #' @export
 OPTIONS <- HTTP_METHOD("OPTIONS")
