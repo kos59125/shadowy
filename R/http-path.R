@@ -1,3 +1,6 @@
+#' @include http.R
+NULL
+
 #' Set URL Path
 #' @param path
 #'    a URL path.

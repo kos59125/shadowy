@@ -1,3 +1,6 @@
+#' @include http.R
+NULL
+
 #' Response Body
 #' @param value
 #'    a value.

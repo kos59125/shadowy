@@ -1,3 +1,6 @@
+#' @include http.R
+NULL
+
 #' HTTP Status
 #'
 #' @param status

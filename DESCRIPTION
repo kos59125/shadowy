@@ -13,9 +13,9 @@ Suggests:
     magrittr
 Encoding: UTF-8
 Collate:
+    'http.R'
     'body.R'
     'headers.R'
-    'http.R'
     'http-method.R'
     'http-path.R'
     'option.R'

@@ -1,3 +1,7 @@
+#' @include http.R
+#' @include option.R
+NULL
+
 #' Creates a Rook application.
 #' @param action
 #'    an http.source object.

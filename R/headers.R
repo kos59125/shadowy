@@ -1,3 +1,6 @@
+#' @include http.R
+NULL
+
 #' Content Type
 #' @param mimeType
 #'    the MIME-Type specified in the response header.
