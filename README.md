@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kos59125/shadowy.svg)](https://travis-ci.org/kos59125/shadowy)
+
 shadowy
 =======
 
