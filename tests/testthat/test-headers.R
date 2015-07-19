@@ -7,7 +7,7 @@ test_that("set content-type with charset", {
    result <- CONTENT_TYPE("text/plain", "utf-8")(context)
 
    expect_true(is.some(result))
-   expect_equal(get.option(result)$response$headers$CONTENT_TYPE, "text/plain; charset=utf-8")
+   expect_equal(get.option(result)$response$headers$"Content-Type", "text/plain; charset=utf-8")
 })
 
 test_that("set content-type without charset", {
@@ -17,5 +17,5 @@ test_that("set content-type without charset", {
    result <- CONTENT_TYPE("application/json")(context)
 
    expect_true(is.some(result))
-   expect_equal(get.option(result)$response$headers$CONTENT_TYPE, "application/json")
+   expect_equal(get.option(result)$response$headers$"Content-Type", "application/json")
 })

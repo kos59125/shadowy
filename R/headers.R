@@ -8,7 +8,7 @@ CONTENT_TYPE <- function(mimeType, charset) {
    }
    as.http.source(function(context) {
       stopifnot(is.http.context(context))
-      context$response$headers$CONTENT_TYPE <- contentType
+      context$response$headers$"Content-Type" <- contentType
       some(context)
    })
 }
