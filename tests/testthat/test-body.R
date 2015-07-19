@@ -12,15 +12,28 @@ test_that("setBody", {
    expect_equal(get.option(result)$response$body, "foo")
 })
 
-test_that("editBody", {
+test_that("setBodyLazy", {
    env <- new.env()
    context <- createContext(env)
    context$response$body <- "foo"
 
-   result <- editBody(. %>% rep(2) %>% paste(collapse = " "))(context)
+   ## Get expected values
+   set.seed(1L)
+   expected1 <- runif(1L)
+   expected2 <- runif(1L)
 
+   ## Reset seed.
+   set.seed(1L)
+
+   ## first call
+   result <- setBodyLazy(quote(runif(1L)))(context)
    expect_true(is.some(result))
-   expect_equal(get.option(result)$response$body, "foo foo")
+   expect_equal(get.option(result)$response$body, as.character(expected1))
+
+   ## second call
+   result <- setBodyLazy(quote(runif(1L)))(context)
+   expect_true(is.some(result))
+   expect_equal(get.option(result)$response$body, as.character(expected2))
 })
 
 test_that("emptyBody", {
@@ -31,5 +44,5 @@ test_that("emptyBody", {
    result <- emptyBody()(context)
 
    expect_true(is.some(result))
-   expect_true(is.null(get.option(result)$response$body))
+   expect_equal(get.option(result)$response$body, "")
 })
