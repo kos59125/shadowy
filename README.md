@@ -3,7 +3,7 @@ shadowy
 
 shadowy is a RESTful API framework for R.
 
-shadowy is inspired by SuaveIO
+shadowy is inspired by [SuaveIO](http://suave.io/)
 
 Installation
 ------------
