@@ -1,5 +1,15 @@
 context("headers")
 
+test_that("set header", {
+   env <- new.env()
+   context <- createContext(env)
+
+   result <- setHeader("X-Shadow-Response", "shadow")(context)
+
+   expect_true(is.some(result))
+   expect_equal(get.option(result)$response$headers$"X-Shadow-Response", "shadow")
+})
+
 test_that("set content-type with charset", {
    env <- new.env()
    context <- createContext(env)

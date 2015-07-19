@@ -19,6 +19,7 @@ Collate:
     'http-method.R'
     'http-path.R'
     'option.R'
+    'status.R'
+    'redirect.R'
     'server.R'
     'shadowy.R'
-    'status.R'

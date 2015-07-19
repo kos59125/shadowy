@@ -1,6 +1,20 @@
 #' @include http.R
 NULL
 
+#' Set Header
+#' @param key
+#'    a response header key.
+#' @param value
+#'    the value.
+#' @export
+setHeader <- function(key, value) {
+   as.http.source(function(context) {
+      stopifnot(is.http.context(context))
+      context$response$headers[key] <- value
+      some(context)
+   })
+}
+
 #' Content Type
 #' @param mimeType
 #'    the MIME-Type specified in the response header.
@@ -13,9 +27,5 @@ CONTENT_TYPE <- function(mimeType, charset) {
    } else {
       sprintf("%s; charset=%s", mimeType, charset)
    }
-   as.http.source(function(context) {
-      stopifnot(is.http.context(context))
-      context$response$headers$"Content-Type" <- contentType
-      some(context)
-   })
+   setHeader("Content-Type", contentType)
 }
