@@ -5,6 +5,7 @@
 \alias{setBody}
 \alias{setBodyLazy}
 \title{Response Body}
+\format{http.source}
 \usage{
 setBody(value)
 

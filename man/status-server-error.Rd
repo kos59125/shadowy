@@ -9,9 +9,7 @@
 \alias{NOT_IMPLEMENTED}
 \alias{SERVICE_UNAVAILABLE}
 \title{Server Error}
-\format{\preformatted{function (context)  
- - attr(*, "class")= chr "http.source"
-}}
+\format{http.source}
 \usage{
 INTERNAL_SERVER_ERROR
 

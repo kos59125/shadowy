@@ -10,9 +10,7 @@
 \alias{PARTIAL_CONTENT}
 \alias{RESET_CONTENT}
 \title{Success}
-\format{\preformatted{function (context)  
- - attr(*, "class")= chr "http.source"
-}}
+\format{http.source}
 \usage{
 OK
 

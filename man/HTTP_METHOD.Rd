@@ -12,9 +12,7 @@
 \alias{PUT}
 \alias{TRACE}
 \title{Check HTTP Method}
-\format{\preformatted{function (context)  
- - attr(*, "class")= chr "http.source"
-}}
+\format{http.source}
 \usage{
 HTTP_METHOD(method)
 

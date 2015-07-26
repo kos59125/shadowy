@@ -8,6 +8,7 @@ NULL
 #'    the given HTTP context itself when the current request HTTP method is one of the given methods;
 #'    otherwise \code{none}.
 #' @rdname HTTP_METHOD
+#' @format http.source
 #' @export
 HTTP_METHOD <- function(method) {
    as.http.source(function(context) {
@@ -25,7 +26,6 @@ HTTP_METHOD <- function(method) {
 ## http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
 ############################################################
 
-#' @include http.R
 #' @rdname HTTP_METHOD
 #' @export
 OPTIONS <- HTTP_METHOD("OPTIONS")

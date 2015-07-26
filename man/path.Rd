@@ -4,6 +4,7 @@
 \alias{path}
 \alias{path.scan}
 \title{Set URL Path}
+\format{http.source}
 \usage{
 path(path)
 

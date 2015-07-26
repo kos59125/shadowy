@@ -5,9 +5,7 @@
 \alias{CONTINUE}
 \alias{SWITCHING_PROTOCOLS}
 \title{Informational}
-\format{\preformatted{function (context)  
- - attr(*, "class")= chr "http.source"
-}}
+\format{http.source}
 \usage{
 CONTINUE
 

@@ -6,6 +6,7 @@ NULL
 #' @param status
 #'    an HTTP status code.
 #' @rdname status
+#' @format http.source
 #' @export
 #' @seealso status-informational
 #' @seealso status-success
@@ -27,6 +28,7 @@ setHttpStatus <- function(status) {
 
 #' Informational
 #' @rdname status-informational
+#' @format http.source
 #' @export
 CONTINUE <- setHttpStatus(100L)
 #' @rdname status-informational
@@ -35,6 +37,7 @@ SWITCHING_PROTOCOLS <- setHttpStatus(101L)
 
 #' Success
 #' @rdname status-success
+#' @format http.source
 #' @export
 OK <- setHttpStatus(200L)
 #' @rdname status-success
@@ -58,6 +61,7 @@ PARTIAL_CONTENT <- setHttpStatus(206L)
 
 #' Redirection
 #' @rdname status-redirection
+#' @format http.source
 #' @export
 MULTIPLE_CHOICES <- setHttpStatus(300L)
 #' @rdname status-redirection
@@ -81,6 +85,7 @@ TEMPORARY_REDIRECT <- setHttpStatus(307L)
 
 #' Client Error
 #' @rdname status-client-error
+#' @format http.source
 #' @export
 BAD_REQUEST <- setHttpStatus(400L)
 #' @rdname status-client-error
@@ -136,6 +141,7 @@ REQUESTED_RANGE_NOT_SATISFIABLE <- setHttpStatus(416L)
 EXPECTATION_FAILED <- setHttpStatus(417L)
 
 #' Server Error
+#' @format http.source
 #' @rdname status-server-error
 #' @export
 INTERNAL_SERVER_ERROR <- setHttpStatus(500L)

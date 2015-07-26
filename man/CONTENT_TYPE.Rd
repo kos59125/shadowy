@@ -3,6 +3,7 @@
 \name{CONTENT_TYPE}
 \alias{CONTENT_TYPE}
 \title{Content Type}
+\format{http.source}
 \usage{
 CONTENT_TYPE(mimeType, charset)
 }

@@ -10,9 +10,7 @@
 \alias{TEMPORARY_REDIRECT}
 \alias{USE_PROXY}
 \title{Redirection}
-\format{\preformatted{function (context)  
- - attr(*, "class")= chr "http.source"
-}}
+\format{http.source}
 \usage{
 MULTIPLE_CHOICES
 

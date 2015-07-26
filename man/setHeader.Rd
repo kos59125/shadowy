@@ -3,6 +3,7 @@
 \name{setHeader}
 \alias{setHeader}
 \title{Set Header}
+\format{http.source}
 \usage{
 setHeader(key, value)
 }

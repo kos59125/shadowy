@@ -21,9 +21,7 @@
 \alias{UNAUTHORIZED}
 \alias{UNSUPPORTED_MEDIA_TIME}
 \title{Client Error}
-\format{\preformatted{function (context)  
- - attr(*, "class")= chr "http.source"
-}}
+\format{http.source}
 \usage{
 BAD_REQUEST
 

@@ -3,6 +3,7 @@
 \name{setHttpStatus}
 \alias{setHttpStatus}
 \title{HTTP Status}
+\format{http.source}
 \usage{
 setHttpStatus(status)
 }

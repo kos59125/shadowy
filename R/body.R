@@ -7,6 +7,7 @@ NULL
 #' @param expr
 #'    a quote object. The value is evaluated at each request.
 #' @rdname body
+#' @format http.source
 #' @export
 setBody <- function(value) {
    as.http.source(function(context) {

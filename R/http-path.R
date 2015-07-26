@@ -9,6 +9,7 @@ NULL
 #' @param ...
 #'    extra parameters.
 #' @rdname path
+#' @format http.source
 #' @export
 path <- function(path) {
    as.http.source(function(context) {
