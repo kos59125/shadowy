@@ -40,6 +40,7 @@ HEAD <- HTTP_METHOD("HEAD")
 #' @export
 POST <- HTTP_METHOD("POST")
 #' @rdname HTTP_METHOD
+#' @export
 PUT <- HTTP_METHOD("PUT")
 #' @rdname HTTP_METHOD
 #' @export
