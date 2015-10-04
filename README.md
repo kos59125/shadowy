@@ -23,3 +23,11 @@ Documentation
 -------------
 
 ToDo
+
+Related Projects
+----------------
+
+Here are similar projects:
+
+* [plumber](https://github.com/trestletech/plumber)
+* [Jug](https://github.com/Bart6114/jug)
