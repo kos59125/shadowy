@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kos59125/shadowy.svg)](https://travis-ci.org/kos59125/shadowy)
+[![Build Status](https://travis-ci.org/kos59125/shadowy.svg)](https://travis-ci.org/kos59125/shadowy) [![CRAN Version](http://www.r-pkg.org/badges/version/shadowy)](http://cran.rstudio.com/web/packages/shadowy)
 
 shadowy
 =======
